@@ -81,11 +81,11 @@ function Camera(scene, options){
 	self.frozen = false;
 
 	// Define key codes for WASD and E
-	const KEY_W = 'w';
-	const KEY_A = 'a';
-	const KEY_S = 's';
-	const KEY_D = 'd';
-	const KEY_E = 'e';
+	const KEY_up = 'w';
+	const KEY_left = 'a';
+	const KEY_down = 's';
+	const KEY_righ = 'd';
+	const KEY_select = 'e';
 	
 	// Initialize variables for movement
 	let isMovingUp = false;
@@ -96,19 +96,19 @@ function Camera(scene, options){
 	// Event listener for keydown
 	document.addEventListener('keydown', function (event) {
 		switch (event.key) {
-			case KEY_W:
+			case KEY_up:
 				isMovingUp = true;
 				break;
-			case KEY_A:
+			case KEY_left:
 				isMovingLeft = true;
 				break;
-			case KEY_S:
+			case KEY_down:
 				isMovingDown = true;
 				break;
-			case KEY_D:
+			case KEY_tight:
 				isMovingRight = true;
 				break;
-			case KEY_E:
+			case KEY_select:
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
 				break;

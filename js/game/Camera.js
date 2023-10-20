@@ -112,6 +112,13 @@ function Camera(scene, options){
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
 
+
+				// ONLY ONCE. FREEZE.
+				if(self.frozen) return;
+				if(!options.streaming){
+					self.frozen = true;
+				}
+
 				// Tell the director
 				if(!options.streaming){
 					scene.director.takePhoto(self);
