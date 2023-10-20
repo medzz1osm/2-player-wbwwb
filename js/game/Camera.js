@@ -78,13 +78,85 @@ function Camera(scene, options){
 	////////////////////////////////
 
     // Controls!
-    self.frozen = false;
-    Game.stage.mousemove = Game.stage.touchstart = Game.stage.touchmove = function(mouseData){
-	    var pos = mouseData.data.global;
-	    self.x = pos.x;
-	    self.y = pos.y;
-	};
-	Game.stage.mousedown = Game.stage.touchend = function(mouseData){
+	//cam1
+	self.frozen = false;
+
+	// Define key codes for WASD and E
+	const KEY_W = 87;
+	const KEY_A = 65;
+	const KEY_S = 83;
+	const KEY_D = 68;
+	const KEY_E = 69;
+	
+	// Initialize variables for movement
+	let isMovingUp = false;
+	let isMovingLeft = false;
+	let isMovingDown = false;
+	let isMovingRight = false;
+	
+	// Event listener for keydown
+	document.addEventListener('keydown', function (event) {
+		switch (event.keyCode) {
+			case KEY_W:
+				isMovingUp = true;
+				break;
+			case KEY_A:
+				isMovingLeft = true;
+				break;
+			case KEY_S:
+				isMovingDown = true;
+				break;
+			case KEY_D:
+				isMovingRight = true;
+				break;
+			case KEY_E:
+				// Handle taking a picture (you can add your logic here)
+				self.takePhoto(); // Call the Camera's takePhoto method
+				break;
+		}
+	});
+	
+	// Event listener for keyup
+	document.addEventListener('keyup', function (event) {
+		switch (event.keyCode) {
+			case KEY_W:
+				isMovingUp = false;
+				break;
+			case KEY_A:
+				isMovingLeft = false;
+				break;
+			case KEY_S:
+				isMovingDown = false;
+				break;
+			case KEY_D:
+				isMovingRight = false;
+				break;
+		}
+	});
+	
+	// Update function
+	function update() {
+		if (isMovingUp) {
+			self.y -= 1; // Adjust the value to control the speed
+		}
+		if (isMovingLeft) {
+			self.x -= 1; // Adjust the value to control the speed
+		}
+		if (isMovingDown) {
+			self.y += 1; // Adjust the value to control the speed
+		}
+		if (isMovingRight) {
+			self.x += 1; // Adjust the value to control the speed
+		}
+	
+		// Call this function within your game loop or update loop
+		requestAnimationFrame(update);
+	}
+	
+	// Start the game loop
+	update();
+	
+	
 
 		// ONLY ONCE. FREEZE.
 		if(self.frozen) return;
@@ -245,4 +317,3 @@ function Camera(scene, options){
 
 
 
-};
