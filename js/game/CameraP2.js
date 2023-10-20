@@ -16,10 +16,10 @@ Game.addToManifest({
 
 });
 
-Camera.WIDTH = Game.width/4;
-Camera.HEIGHT = Game.height/4;
+Camera2.WIDTH = Game.width/4;
+Camera2.HEIGHT = Game.height/4;
 
-function Camera(scene, options){
+function Camera2(scene, options){
 
 	var self = this;
 	options = options || {};
@@ -28,8 +28,8 @@ function Camera(scene, options){
 	self.scene = scene;
     self.x = Game.width/1.5;
     self.y = Game.height/2;
-	self.width = Camera.WIDTH;
-	self.height = Camera.HEIGHT;
+	self.width = Camera2.WIDTH;
+	self.height = Camera2.HEIGHT;
 
 
 
