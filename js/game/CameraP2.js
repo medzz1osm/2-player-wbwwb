@@ -7,11 +7,11 @@ The graphics & controls for this sucka
 
 Game.addToManifest({
 
-	cam_frame: "sprites/cam/cam.png",
-	cam_flash: "sprites/cam/cam-flash.png",
-	cam_instructions: "sprites/cam/cam-instructions.png",
+	cam_frame_2: "sprites/cam/cam.png",
+	cam_flash_2: "sprites/cam/cam-flash.png",
+	cam_instructions_2: "sprites/cam/cam-instructions.png",
 
-	cam_snap: "sounds/cam_snap.mp3"
+	cam_snap_2: "sounds/cam_snap.mp3"
 
 });
 
