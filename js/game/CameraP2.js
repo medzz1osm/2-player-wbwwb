@@ -81,11 +81,11 @@ function Camera(scene, options){
 	self.frozen = false;
 
 	// Define key codes for WASD and E
-	const KEY_up = 'w';
-	const KEY_left = 'a';
-	const KEY_down = 's';
-	const KEY_righ = 'd';
-	const KEY_select = 'e';
+	const KEY_up = 'ArrowUp';
+	const KEY_left = 'ArrowLeft';
+	const KEY_down = 'ArrowDown';
+	const KEY_righ = 'ArrowRight';
+	const KEY_select = 'Shift';
 	
 	// Initialize variables for movement
 	let isMovingUp = false;
@@ -118,16 +118,16 @@ function Camera(scene, options){
 	// Event listener for keyup
 	document.addEventListener('keyup', function (event) {
 		switch (event.key) {
-			case KEY_W:
+			case KEY_up:
 				isMovingUp = false;
 				break;
-			case KEY_A:
+			case KEY_left:
 				isMovingLeft = false;
 				break;
-			case KEY_S:
+			case KEY_down:
 				isMovingDown = false;
 				break;
-			case KEY_D:
+			case KEY_righ:
 				isMovingRight = false;
 				break;
 		}
@@ -136,16 +136,16 @@ function Camera(scene, options){
 	// Update function
 	function update() {
 		if (isMovingUp) {
-			self.y -= 1; // Adjust the value to control the speed
+			self.y -= 4; // Adjust the value to control the speed
 		}
 		if (isMovingLeft) {
-			self.x -= 1; // Adjust the value to control the speed
+			self.x -= 4; // Adjust the value to control the speed
 		}
 		if (isMovingDown) {
-			self.y += 1; // Adjust the value to control the speed
+			self.y += 4; // Adjust the value to control the speed
 		}
 		if (isMovingRight) {
-			self.x += 1; // Adjust the value to control the speed
+			self.x += 4; // Adjust the value to control the speed
 		}
 	
 		// Call this function within your game loop or update loop
