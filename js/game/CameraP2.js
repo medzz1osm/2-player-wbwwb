@@ -25,7 +25,7 @@ function Camera(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/4.5;
+    self.x = Game.width/1.5;
     self.y = Game.height/2;
 	self.width = Camera.WIDTH;
 	self.height = Camera.HEIGHT;
@@ -111,18 +111,7 @@ function Camera(scene, options){
 			case KEY_E:
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
-
-				// Tell the director
-				if(!options.streaming){
-					scene.director.takePhoto(self);
-				}
-
-				// SOUND!
-				if(self.noSounds) return;
-				Game.sounds.cam_snap.play();
-
 				break;
-				
 		}
 	});
 	
@@ -147,23 +136,22 @@ function Camera(scene, options){
 	// Update function
 	function update() {
 		if (isMovingUp) {
-			self.y -= 4; // Adjust the value to control the speed
+			self.y -= 1; // Adjust the value to control the speed
 		}
 		if (isMovingLeft) {
-			self.x -= 4; // Adjust the value to control the speed
+			self.x -= 1; // Adjust the value to control the speed
 		}
 		if (isMovingDown) {
-			self.y += 4; // Adjust the value to control the speed
+			self.y += 1; // Adjust the value to control the speed
 		}
 		if (isMovingRight) {
-			self.x += 4; // Adjust the value to control the speed
+			self.x += 1; // Adjust the value to control the speed
 		}
 	
 		// Call this function within your game loop or update loop
 		requestAnimationFrame(update);
 	}
 	
-
 	// Start the game loop
 	update();
 	
