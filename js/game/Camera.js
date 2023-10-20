@@ -25,7 +25,7 @@ function Camera(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/4.25;
+    self.x = Game.width/4.5;
     self.y = Game.height/2;
 	self.width = Camera.WIDTH;
 	self.height = Camera.HEIGHT;
