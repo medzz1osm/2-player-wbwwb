@@ -85,7 +85,7 @@ function Camera2(scene, options){
 	const KEY_up = 'ArrowUp';
 	const KEY_left = 'ArrowLeft';
 	const KEY_down = 'ArrowDown';
-	const KEY_righ = 'ArrowRight';
+	const KEY_right = 'ArrowRight';
 	const KEY_select = 'Shift';
 	
 	// Initialize variables for movement
