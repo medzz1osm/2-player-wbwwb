@@ -26,7 +26,7 @@ function Camera2(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/1.5;
+    self.x = Game.width/1.25;
     self.y = Game.height/2;
 	self.width = Camera2.WIDTH;
 	self.height = Camera2.HEIGHT;
@@ -112,6 +112,23 @@ function Camera2(scene, options){
 			case KEY_select:
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
+
+
+				// ONLY ONCE. FREEZE.
+				if(self.frozen) return;
+				if(!options.streaming){
+					self.frozen = true;
+				}
+
+				// Tell the director
+				if(!options.streaming){
+					scene.director.takePhoto(self);
+				}
+
+				// SOUND!
+				if(self.noSounds) return;
+				Game.sounds.cam_snap.play();
+
 				break;
 		}
 	});
