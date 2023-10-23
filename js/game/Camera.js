@@ -7,8 +7,8 @@ The graphics & controls for this sucka
 
 Game.addToManifest({
 
-	cam_frame: "sprites/cam/cam.png",
-	cam_flash: "sprites/cam/cam-flash.png",
+	cam_frame: "sprites/cam/cam copy2.png",
+	cam_flash: "sprites/cam/cam-flash copy2.png",
 	cam_instructions: "sprites/cam/cam-instructions.png",
 
 	cam_snap: "sounds/cam_snap.mp3"
