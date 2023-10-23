@@ -29,6 +29,7 @@ function Scene_Game(){
 	// Set Up Everything
     self.world = new World(self);
     self.camera = new Camera(self);
+    self.camera2 = new Camera2(self);
     self.director = new Director(self);
     self.tv = new TV(self);
     self.world.addProp(self.tv);
@@ -47,6 +48,7 @@ function Scene_Game(){
         
         self.world.update();
         self.camera.update();
+        self.camera2.update();
         self.director.update();
 
         // This order is important
