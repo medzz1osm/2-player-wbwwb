@@ -128,7 +128,7 @@ function Camera2(scene, options){
 			case KEY_down:
 				isMovingDown = false;
 				break;
-			case KEY_righ:
+			case KEY_right:
 				isMovingRight = false;
 				break;
 		}
