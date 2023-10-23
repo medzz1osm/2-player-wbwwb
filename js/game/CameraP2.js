@@ -4,10 +4,11 @@ CAMERA:
 The graphics & controls for this sucka
 
 **************************************/
+console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame_2: "sprites/cam/cam.png",
+	cam_frame_2: "sprites/cam/cam-copy.png",
 	cam_flash_2: "sprites/cam/cam-flash.png",
 	cam_instructions_2: "sprites/cam/cam-instructions.png",
 
