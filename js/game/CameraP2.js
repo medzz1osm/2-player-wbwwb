@@ -106,7 +106,7 @@ function Camera2(scene, options){
 			case KEY_down:
 				isMovingDown = true;
 				break;
-			case KEY_tight:
+			case KEY_right:
 				isMovingRight = true;
 				break;
 			case KEY_select:
