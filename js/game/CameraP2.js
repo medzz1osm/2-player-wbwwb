@@ -4,31 +4,32 @@ CAMERA:
 The graphics & controls for this sucka
 
 **************************************/
+console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame: "sprites/cam/cam copy2.png",
-	cam_flash: "sprites/cam/cam-flash copy2.png",
-	cam_instructions: "sprites/cam/cam-instructions.png",
+	cam_frame_2: "sprites/cam/cam.png",
+	cam_flash_2: "sprites/cam/cam-flash.png",
+	cam_instructions_2: "sprites/cam/cam-instructions.png",
 
-	cam_snap: "sounds/cam_snap.mp3"
+	cam_snap_2: "sounds/cam_snap.mp3"
 
 });
 
-Camera.WIDTH = Game.width/4;
-Camera.HEIGHT = Game.height/4;
+Camera2.WIDTH = Game.width/4;
+Camera2.HEIGHT = Game.height/4;
 
-function Camera(scene, options){
+function Camera2(scene, options){
 
 	var self = this;
 	options = options || {};
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/4.5;
+    self.x = Game.width/1.5;
     self.y = Game.height/2;
-	self.width = Camera.WIDTH;
-	self.height = Camera.HEIGHT;
+	self.width = Camera2.WIDTH;
+	self.height = Camera2.HEIGHT;
 
 
 
@@ -81,11 +82,11 @@ function Camera(scene, options){
 	self.frozen = false;
 
 	// Define key codes for WASD and E
-	const KEY_W = 'w';
-	const KEY_A = 'a';
-	const KEY_S = 's';
-	const KEY_D = 'd';
-	const KEY_E = 'e';
+	const KEY_up = 'ArrowUp';
+	const KEY_left = 'ArrowLeft';
+	const KEY_down = 'ArrowDown';
+	const KEY_righ = 'ArrowRight';
+	const KEY_select = 'Shift';
 	
 	// Initialize variables for movement
 	let isMovingUp = false;
@@ -96,56 +97,38 @@ function Camera(scene, options){
 	// Event listener for keydown
 	document.addEventListener('keydown', function (event) {
 		switch (event.key) {
-			case KEY_W:
+			case KEY_up:
 				isMovingUp = true;
 				break;
-			case KEY_A:
+			case KEY_left:
 				isMovingLeft = true;
 				break;
-			case KEY_S:
+			case KEY_down:
 				isMovingDown = true;
 				break;
-			case KEY_D:
+			case KEY_tight:
 				isMovingRight = true;
 				break;
-			case KEY_E:
+			case KEY_select:
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
-
-
-				// ONLY ONCE. FREEZE.
-				if(self.frozen) return;
-				if(!options.streaming){
-					self.frozen = true;
-				}
-
-				// Tell the director
-				if(!options.streaming){
-					scene.director.takePhoto(self);
-				}
-
-				// SOUND!
-				if(self.noSounds) return;
-				Game.sounds.cam_snap.play();
-
 				break;
-				
 		}
 	});
 	
 	// Event listener for keyup
 	document.addEventListener('keyup', function (event) {
 		switch (event.key) {
-			case KEY_W:
+			case KEY_up:
 				isMovingUp = false;
 				break;
-			case KEY_A:
+			case KEY_left:
 				isMovingLeft = false;
 				break;
-			case KEY_S:
+			case KEY_down:
 				isMovingDown = false;
 				break;
-			case KEY_D:
+			case KEY_righ:
 				isMovingRight = false;
 				break;
 		}
@@ -170,7 +153,6 @@ function Camera(scene, options){
 		requestAnimationFrame(update);
 	}
 	
-
 	// Start the game loop
 	update();
 	
