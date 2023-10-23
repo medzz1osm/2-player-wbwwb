@@ -25,7 +25,7 @@ function Camera(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/2;
+    self.x = Game.width/4.5;
     self.y = Game.height/2;
 	self.width = Camera.WIDTH;
 	self.height = Camera.HEIGHT;
@@ -78,6 +78,7 @@ function Camera(scene, options){
 	////////////////////////////////
 
     // Controls!
+<<<<<<< HEAD
 	//cam1
 	self.frozen = false;
 
@@ -157,27 +158,104 @@ function Camera(scene, options){
 	update();
 	
 	
+=======
+	self.frozen = false;
+>>>>>>> origin/cameracont
 
-		// ONLY ONCE. FREEZE.
-		if(self.frozen) return;
-		if(!options.streaming){
-			self.frozen = true;
+	// Define key codes for WASD and E
+	const KEY_W = 'w';
+	const KEY_A = 'a';
+	const KEY_S = 's';
+	const KEY_D = 'd';
+	const KEY_E = 'e';
+	
+	// Initialize variables for movement
+	let isMovingUp = false;
+	let isMovingLeft = false;
+	let isMovingDown = false;
+	let isMovingRight = false;
+	
+	// Event listener for keydown
+	document.addEventListener('keydown', function (event) {
+		switch (event.key) {
+			case KEY_W:
+				isMovingUp = true;
+				break;
+			case KEY_A:
+				isMovingLeft = true;
+				break;
+			case KEY_S:
+				isMovingDown = true;
+				break;
+			case KEY_D:
+				isMovingRight = true;
+				break;
+			case KEY_E:
+				// Handle taking a picture (you can add your logic here)
+				self.takePhoto(); // Call the Camera's takePhoto method
+
+
+				// ONLY ONCE. FREEZE.
+				if(self.frozen) return;
+				if(!options.streaming){
+					self.frozen = true;
+				}
+
+				// Tell the director
+				if(!options.streaming){
+					scene.director.takePhoto(self);
+				}
+
+				// SOUND!
+				if(self.noSounds) return;
+				Game.sounds.cam_snap.play();
+
+				break;
+				
 		}
-
-		// Take Texture
-		self.takePhoto();
-
-		// Tell the director
-		if(!options.streaming){
-			scene.director.takePhoto(self);
+	});
+	
+	// Event listener for keyup
+	document.addEventListener('keyup', function (event) {
+		switch (event.key) {
+			case KEY_W:
+				isMovingUp = false;
+				break;
+			case KEY_A:
+				isMovingLeft = false;
+				break;
+			case KEY_S:
+				isMovingDown = false;
+				break;
+			case KEY_D:
+				isMovingRight = false;
+				break;
 		}
+	});
+	
+	// Update function
+	function update() {
+		if (isMovingUp) {
+			self.y -= 4; // Adjust the value to control the speed
+		}
+		if (isMovingLeft) {
+			self.x -= 4; // Adjust the value to control the speed
+		}
+		if (isMovingDown) {
+			self.y += 4; // Adjust the value to control the speed
+		}
+		if (isMovingRight) {
+			self.x += 4; // Adjust the value to control the speed
+		}
+	
+		// Call this function within your game loop or update loop
+		requestAnimationFrame(update);
+	}
+	
 
-		// SOUND!
-		if(self.noSounds) return;
-		Game.sounds.cam_snap.play();
-
-	};
-	Game.stage.mouseup = function(mouseData){}; // nothing at all
+	// Start the game loop
+	update();
+	
 
 
 
