@@ -8,7 +8,7 @@ console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame_2: "sprites/cam/cam.png",
+	cam_frame_2: "sprites/cam/cam-copy.png",
 	cam_flash_2: "sprites/cam/cam-flash.png",
 	cam_instructions_2: "sprites/cam/cam-instructions.png",
 
@@ -26,7 +26,7 @@ function Camera2(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/1.5;
+    self.x = Game.width/1.25;
     self.y = Game.height/2;
 	self.width = Camera2.WIDTH;
 	self.height = Camera2.HEIGHT;
@@ -85,7 +85,7 @@ function Camera2(scene, options){
 	const KEY_up = 'ArrowUp';
 	const KEY_left = 'ArrowLeft';
 	const KEY_down = 'ArrowDown';
-	const KEY_righ = 'ArrowRight';
+	const KEY_right = 'ArrowRight';
 	const KEY_select = 'Shift';
 	
 	// Initialize variables for movement
@@ -106,12 +106,29 @@ function Camera2(scene, options){
 			case KEY_down:
 				isMovingDown = true;
 				break;
-			case KEY_tight:
+			case KEY_right:
 				isMovingRight = true;
 				break;
 			case KEY_select:
 				// Handle taking a picture (you can add your logic here)
 				self.takePhoto(); // Call the Camera's takePhoto method
+
+
+				// ONLY ONCE. FREEZE.
+				if(self.frozen) return;
+				if(!options.streaming){
+					self.frozen = true;
+				}
+
+				// Tell the director
+				if(!options.streaming){
+					scene.director.takePhoto(self);
+				}
+
+				// SOUND!
+				if(self.noSounds) return;
+				Game.sounds.cam_snap.play();
+
 				break;
 		}
 	});
@@ -128,7 +145,7 @@ function Camera2(scene, options){
 			case KEY_down:
 				isMovingDown = false;
 				break;
-			case KEY_righ:
+			case KEY_right:
 				isMovingRight = false;
 				break;
 		}
