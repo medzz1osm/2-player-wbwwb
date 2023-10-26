@@ -312,5 +312,4 @@ function Camera(scene, options){
 	};
 
 
-
-};
+}
