@@ -12,6 +12,8 @@ When you click to take a photo, the Director...
 
 **************************************/
 
+current_camera = null
+
 Game.addToManifest({
 	crickets: "sounds/crickets.mp3",
 	breaking_news: "sounds/breaking_news.mp3"
@@ -42,6 +44,9 @@ function Director(scene){
 
 		// Which tv...
 		self.tv = scene.tv;
+
+		// which camera
+		current_camera = camera
 
 		// Animation!
 		Tween_get(self).wait(_s(0.25)) // flash
@@ -236,7 +241,7 @@ function Director(scene){
 		var caught = [];
 
 		// cam top-left-right-bottom
-		var cam = scene.camera;
+		var cam = current_camera;
 		var cl = cam.x-cam.width/2;
 		var cr = cam.x+cam.width/2;
 		var ct = cam.y-cam.height/2;
@@ -295,7 +300,7 @@ function Director(scene){
 	var _anim = {};
 	_anim.movePhoto = function(){
 
-		var cam = scene.camera;
+		var cam = current_camera;
 
 		// Pan: Center
 		Tween_get(cam.graphics)
@@ -316,7 +321,7 @@ function Director(scene){
 		self.isWatchingTV = true;
 
 		// Hide Camera
-		scene.camera.hide();
+		current_camera.hide();
 
         // SOUND?
 		var data = self.photoData;
@@ -418,7 +423,7 @@ function Director(scene){
 	_anim.reset = function(){
 
 		// Reset Camera
-		scene.camera.reset();
+		current_camera.reset();
 
 		// World
 		self.cutViewportTo({
