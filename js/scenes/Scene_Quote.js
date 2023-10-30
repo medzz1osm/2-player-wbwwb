@@ -74,10 +74,10 @@ function Scene_Quote(){
 
 	// TWEEN ANIM
 	Tween_get(q2)
-	.wait(_s(BEAT*1.5))
+	.wait(_s(BEAT*0.75))
 	.to({alpha:1}, _s(BEAT), Ease.quadInOut).call(function(){
 		Tween_get(q3)
-		.wait(_s(4.0*BEAT))
+		.wait(_s(2.0*BEAT))
 		.to({alpha:1}, _s(BEAT), Ease.quadInOut).call(function(){
 			Tween_get(q4)
 			.wait(_s(BEAT))
@@ -92,7 +92,7 @@ function Scene_Quote(){
 			   	ambience.fade(0, 1, 2000);
 
 			})
-			.wait(_s(BEAT*1.5))
+			.wait(_s(BEAT*0.75))
 			.call(function(){
 
 				Tween_get(text).to({alpha:0}, _s(BEAT), Ease.quadInOut).call(function(){
