@@ -8,7 +8,7 @@ console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame_2: "sprites/cam/cam-copy.png",
+	cam_frame_2: "",
 	cam_flash_2: "sprites/cam/cam-flash.png",
 	cam_instructions_2: "sprites/cam/cam-instructions.png",
 
