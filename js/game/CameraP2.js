@@ -96,6 +96,7 @@ function Camera2(scene, options){
 	
 	// Event listener for keydown
 	document.addEventListener('keydown', function (event) {
+		if (self.frozen) return;
 		switch (event.key) {
 			case KEY_up:
 				isMovingUp = true;
@@ -136,6 +137,7 @@ function Camera2(scene, options){
 	
 	// Event listener for keyup
 	document.addEventListener('keyup', function (event) {
+		if (self.frozen) return;
 		switch (event.key) {
 			case KEY_up:
 				isMovingUp = false;
