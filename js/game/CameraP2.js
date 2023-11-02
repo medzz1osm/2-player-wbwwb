@@ -118,6 +118,7 @@ function Camera2(scene, options){
 				if(self.frozen) return;
 				if(!options.streaming){
 					self.frozen = true;
+					scene.camera.frozen = true;
 				}
 
 				// Tell the director
