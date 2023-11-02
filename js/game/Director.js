@@ -424,7 +424,8 @@ function Director(scene){
 	_anim.reset = function(){
 
 		// Reset Camera
-		current_camera.reset();
+		scene.camera.reset();
+		scene.camera2.reset();
 
 		// World
 		self.cutViewportTo({
