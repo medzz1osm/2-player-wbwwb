@@ -321,7 +321,8 @@ function Director(scene){
 		self.isWatchingTV = true;
 
 		// Hide Camera
-		current_camera.hide();
+		scene.camera.hide();
+		scene.camera2.hide();
 
         // SOUND?
 		var data = self.photoData;
