@@ -53,7 +53,7 @@ var textStrings_EN = {
 	// -- Strings currently in graphics resources --
 
 	// (bg_preload.png) Preload screen
-	"playingTime": "playing time: 5 minutes",
+	"playingTime": "playing time: five minutes",
 	"warning": "warning: the following program\ncontains scenes of snobbery,\nrudeness & mass murder.\nviewer discretion is advised.",
 
 	// (cam-instructions.png) Camera Instructions
