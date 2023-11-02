@@ -10,7 +10,7 @@ Game.addToManifest({
 
 	cam_frame_2: "",
 	cam_flash_2: "sprites/cam/cam-flash.png",
-	cam_instructions_2: "sprites/cam/cam-instructions.png",
+	cam_instructions_2: "sprites/cam/cam-instructions2.png",
 
 	cam_snap_2: "sounds/cam_snap.mp3"
 
@@ -61,7 +61,7 @@ function Camera2(scene, options){
     self.graphics.addChild(self.frame);
 
 	if(!options.noIntro){
-	    self.instructions = new PIXI.Sprite(resources.cam_instructions.texture);
+	    self.instructions = new PIXI.Sprite(resources.cam_instructions_2.texture);
 		self.instructions.scale.x = self.instructions.scale.y = 0.5;
 	    self.instructions.anchor.x = 0.5;
 	    self.instructions.anchor.y = 0;
