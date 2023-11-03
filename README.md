@@ -1,6 +1,6 @@
 # A game about news cycles, vicious cycles, infinite cycles
 
-The original
+The original 
 **[PLAY](https://ncase.itch.io/wbwwb)** -- **[GitHub](https://github.com/ncase/wbwwb)**
 
 ---
