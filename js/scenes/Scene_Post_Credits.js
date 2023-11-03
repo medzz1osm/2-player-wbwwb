@@ -50,9 +50,25 @@ function Scene_Post_Credits(){
             Game.sceneManager.gotoScene("Post_Post_Credits");
             //}
         }
+    
     });
+
+    self.camera2 = new Camera2(self,{
+        noIntro: true,
+        streaming: true,
+        onTakePhoto: function(){
+            //if(self.camera.isOverTV()){
+            Game.sounds.bg_nighttime.stop();
+            Game.sceneManager.gotoScene("Post_Post_Credits");
+            //}
+        }
+    
+    });
+
     self.camera.x = Game.width;
     self.camera.y = Game.height;
+    self.camera2.x = Game.width;
+    self.camera2.y = Game.height;
 
     // Put a SPRITE RIGHT IN THE BG
     self.stream = new PIXI.Sprite();
@@ -67,6 +83,7 @@ function Scene_Post_Credits(){
 
         self.world.update();
         self.camera.update();
+        self.camera2.update();
 
         // THE STREAM
         self.stream.texture = self.camera.getTexture();
