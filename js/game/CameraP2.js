@@ -274,10 +274,10 @@ function Camera2(scene, options){
 	self.updatePosition = function(){
 		
 		// Constraints
-	    if(self.x<self.width/2) self.x=self.width/1.99;
-	    if(self.x>Game.width-self.width/2) self.x=Game.width-self.width/1.99;
-	    if(self.y<self.height/2) self.y=self.height/1.99;
-	    if(self.y>Game.height-self.height/2) self.y=Game.height-self.height/1.99;
+	    if(self.x<self.width/2) self.x=self.width/2;
+	    if(self.x>Game.width-self.width/2) self.x=Game.width-self.width/2;
+	    if(self.y<self.height/2) self.y=self.height/2;
+	    if(self.y>Game.height-self.height/2) self.y=Game.height-self.height/2;
 
 	    // Container moves!
 		self.graphics.x = self.x;
