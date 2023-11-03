@@ -38,28 +38,28 @@ Starten kunne vært noe raskere
 
 v2
 Tilbakemelding 3 max og odin
-Shit
-Gjør det mindre shit
-Fix bug where camera gets stuck
-Gikk for fort 
-Controls
-Controls
+1. Shit
+2. Gjør det mindre shit
+3. Fix bug where camera gets stuck
+4. Gikk for fort 
+5. Controls
+6. Controls
 
 v2
 Tilbakemelding 4 jørgen
-Bra
-Mer action gjennom spillet
-bra
-Bra hastighet
-nei
-nei
+1. Bra
+2. Mer action gjennom spillet
+3. bra
+4. Bra hastighet
+5. nei
+6. nei
 
 v3
 Tilbakemelding 5 emily 
-Bra konsept, morsomt gøy dynamikk med to spillere
-Nei
-Works
-saktere
-Sakter så spilleren kan lese warningen 
-Get stuck into wall
+1. Bra konsept, morsomt gøy dynamikk med to spillere
+2. Nei
+3. Works
+4. saktere
+5. Sakter så spilleren kan lese warningen 
+6. Get stuck into wall
 
