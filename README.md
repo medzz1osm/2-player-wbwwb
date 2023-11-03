@@ -6,6 +6,9 @@ The original
 ---
 
 **Brukertest**
+v1 = verson 1 utenn lagdt til endringer 
+v2 = lagdt til noen av endringene 
+v3 = lagdt til alle endringer 
 
 - Hva tror du de to boksene gjør?
 - Klarer du å finne ut hvordan du bruker dem?
@@ -24,6 +27,11 @@ The original
 5. Var det noe som var vanskelig/uklart? 
 6. Kom du gjennom noen bugs?
 
+
+
+**v1 = verson 1 utenn lagdt til endringer 
+v2 = lagdt til noen av endringene fra tilbakemelingene fra v1
+v3 = lagdt til alle endringene vi fikk til fra v2**
 
 v1
 Tilbakemelding 1 suzane
