@@ -16,12 +16,12 @@ Klarer du å pause spillet?
 
 
 Tilbakemelding 
-Hva synes du om spillet/konseptet? 
-Er det noe du synes vi bør legge til eller fjerne? 
-Hva synes du om kontrollene? 
-Hva synes du om hastigheten til starten av spillet? 
-Var det noe som var vanskelig/uklart? 
-Kom du gjennom noen bugs?
+1. Hva synes du om spillet/konseptet? 
+1. Er det noe du synes vi bør legge til eller fjerne? 
+1. Hva synes du om kontrollene? 
+1. Hva synes du om hastigheten til starten av spillet? 
+1. Var det noe som var vanskelig/uklart? 
+1. Kom du gjennom noen bugs?
 
 
 v1
