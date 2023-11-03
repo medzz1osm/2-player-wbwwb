@@ -4,7 +4,6 @@ CAMERA:
 The graphics & controls for this sucka
 
 **************************************/
-console.log("I exist")
 
 Game.addToManifest({
 
