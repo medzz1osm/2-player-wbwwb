@@ -200,7 +200,7 @@ function Stage_Panic(self){
         panic.stop();
 
         // Next Scene!
-        Game.sceneManager.gotoScene("Credits");
+        Game.sceneManager.gotoScene("Post_Credits");
 
     };
 
