@@ -8,9 +8,9 @@ console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame_2: "/Users/60zekmed/Documents/GitHub/wbwwb-master/sprites/cam/cam copy.png",
+	cam_frame_2: "sprites/cam/cam copy.png",
 	cam_flash_2: "sprites/cam/cam-flash.png",
-	cam_instructions_2: "sprites/cam/cam-instructions2.png",
+	cam_instructions2: "sprites/cam/cam-instructions2.png",
 
 	cam_snap_2: "sounds/cam_snap.mp3"
 
@@ -49,19 +49,19 @@ function Camera2(scene, options){
 	// FLASH, FRAME, INSTRUCTIONS
 	var resources = PIXI.loader.resources;
 	
-	self.flash = new PIXI.Sprite(resources.cam_frame_2.texture);
+	self.flash = new PIXI.Sprite(resources.cam_flash.texture);
 	self.flash.scale.x = self.flash.scale.y = 0.5;
     self.flash.anchor.x = self.flash.anchor.y = 0.5;
     self.flash.alpha = 0;
     self.graphics.addChild(self.flash);
 	
-	self.frame = new PIXI.Sprite(resources.cam_frame.texture);
+	self.frame = new PIXI.Sprite(resources.cam_frame_2.texture);
 	self.frame.scale.x = self.frame.scale.y = 0.5;
     self.frame.anchor.x = self.frame.anchor.y = 0.5;
     self.graphics.addChild(self.frame);
 
 	if(!options.noIntro){
-	    self.instructions = new PIXI.Sprite(resources.cam_instructions_2.texture);
+	    self.instructions = new PIXI.Sprite(resources.cam_instructions2.texture);
 		self.instructions.scale.x = self.instructions.scale.y = 0.5;
 	    self.instructions.anchor.x = 0.5;
 	    self.instructions.anchor.y = 0;
