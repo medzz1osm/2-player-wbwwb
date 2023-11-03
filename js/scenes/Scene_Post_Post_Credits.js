@@ -32,27 +32,29 @@ function Scene_Post_Post_Credits() {
 
     var replayLabel = MakeMovieClip("end_button");
     replayLabel.anchor.x = replayLabel.anchor.y = 0.5;
-    replayLabel.gotoAndStop(2); // Set the frame for "replay this mess"
+    replayLabel.gotoAndStop(4); // Set the frame for "replay this mess"
     replayButton.addChild(replayLabel);
 
     // INTERACTIVITY for the "replay this mess" button
     replayButton.interactive = true;
-    replayButton.mouseover = replayButton.touchstart = function () {
-        isHovering = true;
-        replayBg.gotoAndStop(1);
-        Tween_get(replayButton.scale).to({ x: 1.05, y: 1.05 }, _s(0.2));
-    };
-    replayButton.mouseout = function () {
-        isHovering = false;
-        replayBg.gotoAndStop(0);
-        Tween_get(replayButton.scale).to({ x: 1, y: 1 }, _s(0.2));
-    };
-    replayButton.mousedown = replayButton.touchend = function () {
-        isHovering = false;
-        Game.sounds.squeak.play();
-        // Replace with your replay action
-    };
-
+	replayButton.mouseover = replayButton.touchstart = function () {
+		isHovering = true;
+		replayBg.gotoAndStop(1);
+		Tween_get(replayButton.scale).to({ x: 1.05, y: 1.05 }, _s(0.2));
+	};
+	replayButton.mouseout = function () {
+		isHovering = false;
+		replayBg.gotoAndStop(0);
+		Tween_get(replayButton.scale).to({ x: 1, y: 1 }, _s(0.2));
+	};
+	replayButton.mousedown = replayButton.touchend = function () {
+		isHovering = false;
+		Game.sounds.squeak.play();
+		
+		// Perform the replay action here
+		// For example, you can navigate to the scene you want to replay:
+		Game.sceneManager.gotoScene("Quote");
+	};
     // CURSOR
     var cursor = new Cursor(self);
     var g = cursor.graphics;
