@@ -82,8 +82,7 @@ var textStrings_EN = {
 	"playButton": "PLAY",
 
 	// (end_button.png) Post Credits
-	"otherWorkButton": "see my other work",
-	"buyCoffeeButton": "buy me a coffee",
+	
 	"replayButton": "replay this mess",
 
 	// (logo.png) Post Credits
