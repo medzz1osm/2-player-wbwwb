@@ -95,6 +95,7 @@ function Camera(scene, options){
 	
 	// Event listener for keydown
 	document.addEventListener('keydown', function (event) {
+		if (self.frozen) return;
 		switch (event.key) {
 			case KEY_W:
 				isMovingUp = true;
@@ -117,6 +118,7 @@ function Camera(scene, options){
 				if(self.frozen) return;
 				if(!options.streaming){
 					self.frozen = true;
+					scene.camera2.frozen = true;
 				}
 
 				// Tell the director
@@ -135,6 +137,7 @@ function Camera(scene, options){
 	
 	// Event listener for keyup
 	document.addEventListener('keyup', function (event) {
+		if (self.frozen) return;
 		switch (event.key) {
 			case KEY_W:
 				isMovingUp = false;
@@ -318,5 +321,4 @@ function Camera(scene, options){
 	};
 
 
-
-};
+}

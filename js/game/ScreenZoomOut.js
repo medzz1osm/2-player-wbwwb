@@ -11,7 +11,7 @@ Provides a screen zooming-out feature!
 function ScreenZoomOut(scene){
 
 	var self = this;
-	self.scene = scene;
+	self.scene = scene; //dette gjør x og y 
 
 	self.started = false;
 	self.laptop = null;

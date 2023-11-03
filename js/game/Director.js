@@ -321,7 +321,8 @@ function Director(scene){
 		self.isWatchingTV = true;
 
 		// Hide Camera
-		current_camera.hide();
+		scene.camera.hide();
+		scene.camera2.hide();
 
         // SOUND?
 		var data = self.photoData;
@@ -423,7 +424,8 @@ function Director(scene){
 	_anim.reset = function(){
 
 		// Reset Camera
-		current_camera.reset();
+		scene.camera.reset();
+		scene.camera2.reset();
 
 		// World
 		self.cutViewportTo({
