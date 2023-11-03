@@ -94,10 +94,10 @@ var textStrings_EN = {
 
 	// (quote0002.png)
 	"WBWWB": "WARNING",
-	"WSOTATOTSU": "If stuck into a wall go into it then out",
+	"WSOTATOTSU": "If you're stuck in a wall, walk into it, then out",
 
 	// (quote0003.png)
-	"MarshallMcLuhan": "get ready for this mess",
+	"MarshallMcLuhan": "Get ready for this mess",
 
 	// (quote0004.png)
 	"misatrributed": "Good luck",
