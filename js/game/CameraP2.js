@@ -8,7 +8,7 @@ console.log("I exist")
 
 Game.addToManifest({
 
-	cam_frame_2: "",
+	cam_frame_2: "/Users/60zekmed/Documents/GitHub/wbwwb-master/sprites/cam/cam copy.png",
 	cam_flash_2: "sprites/cam/cam-flash.png",
 	cam_instructions_2: "sprites/cam/cam-instructions2.png",
 
@@ -49,7 +49,7 @@ function Camera2(scene, options){
 	// FLASH, FRAME, INSTRUCTIONS
 	var resources = PIXI.loader.resources;
 	
-	self.flash = new PIXI.Sprite(resources.cam_flash.texture);
+	self.flash = new PIXI.Sprite(resources.cam_frame_2.texture);
 	self.flash.scale.x = self.flash.scale.y = 0.5;
     self.flash.anchor.x = self.flash.anchor.y = 0.5;
     self.flash.alpha = 0;
