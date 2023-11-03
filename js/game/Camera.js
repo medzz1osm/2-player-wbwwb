@@ -273,18 +273,24 @@ function Camera(scene, options){
 	//////////////////////////
 
 	// Update
-	self.updatePosition = function(){
-		
+	self.updatePosition = function () {
 		// Constraints
-	    if(self.x<self.width/2) self.x=self.width/2;
-	    if(self.x>Game.width-self.width/2) self.x=Game.width-self.width/2;
-	    if(self.y<self.height/2) self.y=self.height/2;
-	    if(self.y>Game.height-self.height/2) self.y=Game.height-self.height/2;
-
-	    // Container moves!
+		if (self.x < self.width / 2) {
+			self.x = self.width / 2;
+		}
+		if (self.x > Game.width - self.width / 2) {
+			self.x = Game.width - self.width / 2;
+		}
+		if (self.y < self.height / 2) {
+			self.y = self.height / 2;
+		}
+		if (self.y > Game.height - self.height / 2) {
+			self.y = Game.height - self.height / 2;
+		}
+	
+		// Container moves
 		self.graphics.x = self.x;
 		self.graphics.y = self.y;
-
 	};
 	self.update = function(){
 		if(!self.frozen) self.updatePosition();
