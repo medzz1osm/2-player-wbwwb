@@ -6,13 +6,13 @@ The original
 ---
 
 Brukertest 
-Hva tror du de to boksene gjør?
-Klarer du å finne ut hvordan du bruker dem?
-Vet du hva du skal gjøre?
-Klarer du å ta bilde?
-Klarer du å gjennomføre spillet?
-Start spillet igjen etter at det er blitt tatt i pause
-Klarer du å pause spillet?
+  Hva tror du de to boksene gjør?
+  Klarer du å finne ut hvordan du bruker dem?
+  Vet du hva du skal gjøre?
+  Klarer du å ta bilde?
+  Klarer du å gjennomføre spillet?
+  Start spillet igjen etter at det er blitt tatt i pause
+  Klarer du å pause spillet?
 
 
 Tilbakemelding 
