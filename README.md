@@ -16,7 +16,7 @@ The original
 - Klarer du å pause spillet?
 
 
-Tilbakemelding 
+**Tilbakemelding**
 1. Hva synes du om spillet/konseptet? 
 2. Er det noe du synes vi bør legge til eller fjerne? 
 3. Hva synes du om kontrollene? 
