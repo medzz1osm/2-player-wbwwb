@@ -96,7 +96,7 @@ function Scene_Quote(){
 			.call(function(){
 
 				Tween_get(text).to({alpha:0}, _s(BEAT), Ease.quadInOut).call(function(){
-					Game.sceneManager.gotoScene("Post_Post_Credits");
+					Game.sceneManager.gotoScene("Game");
 				});
 
 			});
