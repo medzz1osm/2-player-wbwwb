@@ -9,7 +9,7 @@ var textStrings_EN = {
 	"getARoom": "GROSS, GO GET A ROOM",
 	"notCoolAnymore": "nvm hats aren't cool anymore",
 	"tvOnTv": "A TV... ON TV!",
-	"cricky": "LIL' CRICKY <3",
+	"cricky": "LIL' CRICKY Ɛ>",
 	"tooManyCrickets": "okay that's too many crickets",
 	"normalPeep": "just a normal peep",
 	"normalPeeps": "just some normal peeps",
