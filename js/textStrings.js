@@ -94,14 +94,14 @@ var textStrings_EN = {
 	"toBeContinued": "(to be continued!)",
 
 	// (quote0002.png)
-	"WBWWB": "We become what we behold.",
-	"WSOTATOTSU": "We shape our tools and then our tools shape us.",
+	"WBWWB": "WARNING",
+	"WSOTATOTSU": "If stuck into a wall go into it then out",
 
 	// (quote0003.png)
-	"MarshallMcLuhan": "Marshall McLuhan",
+	"MarshallMcLuhan": "get ready for this mess",
 
 	// (quote0004.png)
-	"misatrributed": "(misattributed)",
+	"misatrributed": "Good luck",
 };
 
 
