@@ -6,7 +6,7 @@ The original
 ---
 
 **Brukertest**
-v1 = verson 1 utenn lagdt til endringer 
+v1 = verson 1 uten lagdt til endringer 
 v2 = lagdt til noen av endringene 
 v3 = lagdt til alle endringer 
 
@@ -29,7 +29,7 @@ v3 = lagdt til alle endringer
 
 
 
-**v1 = verson 1 utenn lagdt til endringer 
+**v1 = verson 1 uten lagdt til endringer 
 v2 = lagdt til noen av endringene fra tilbakemelingene fra v1
 v3 = lagdt til alle endringene vi fikk til fra v2**
 

@@ -9,7 +9,7 @@ var textStrings_EN = {
 	"getARoom": "GROSS, GO GET A ROOM",
 	"notCoolAnymore": "nvm hats aren't cool anymore",
 	"tvOnTv": "A TV... ON TV!",
-	"cricky": "LIL' CRICKY <3",
+	"cricky": "LIL' CRICKY Ɛ>",
 	"tooManyCrickets": "okay that's too many crickets",
 	"normalPeep": "just a normal peep",
 	"normalPeeps": "just some normal peeps",
@@ -82,8 +82,7 @@ var textStrings_EN = {
 	"playButton": "PLAY",
 
 	// (end_button.png) Post Credits
-	"otherWorkButton": "see my other work",
-	"buyCoffeeButton": "buy me a coffee",
+	
 	"replayButton": "replay this mess",
 
 	// (logo.png) Post Credits
@@ -94,14 +93,14 @@ var textStrings_EN = {
 	"toBeContinued": "(to be continued!)",
 
 	// (quote0002.png)
-	"WBWWB": "We become what we behold.",
-	"WSOTATOTSU": "We shape our tools and then our tools shape us.",
+	"WBWWB": "WARNING",
+	"WSOTATOTSU": "If you're stuck in a wall, walk into it, then out",
 
 	// (quote0003.png)
-	"MarshallMcLuhan": "Marshall McLuhan",
+	"MarshallMcLuhan": "Get ready for this mess",
 
 	// (quote0004.png)
-	"misatrributed": "(misattributed)",
+	"misatrributed": "Good luck",
 };
 
 

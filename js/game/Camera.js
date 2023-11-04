@@ -9,7 +9,7 @@ Game.addToManifest({
 
 	cam_frame: "sprites/cam/cam.png",
 	cam_flash: "sprites/cam/cam-flash.png",
-	cam_instructions: "sprites/cam/cam-instructions.png",
+	cam_instructions: "Screenshot_2023-11-03_at_19.02.44-removebg-preview.png",
 
 	cam_snap: "sounds/cam_snap.mp3"
 
@@ -273,18 +273,24 @@ function Camera(scene, options){
 	//////////////////////////
 
 	// Update
-	self.updatePosition = function(){
-		
+	self.updatePosition = function () {
 		// Constraints
-	    if(self.x<self.width/2) self.x=self.width/2;
-	    if(self.x>Game.width-self.width/2) self.x=Game.width-self.width/2;
-	    if(self.y<self.height/2) self.y=self.height/2;
-	    if(self.y>Game.height-self.height/2) self.y=Game.height-self.height/2;
-
-	    // Container moves!
+		if (self.x < self.width / 2) {
+			self.x = self.width / 2;
+		}
+		if (self.x > Game.width - self.width / 2) {
+			self.x = Game.width - self.width / 2;
+		}
+		if (self.y < self.height / 2) {
+			self.y = self.height / 2;
+		}
+		if (self.y > Game.height - self.height / 2) {
+			self.y = Game.height - self.height / 2;
+		}
+	
+		// Container moves
 		self.graphics.x = self.x;
 		self.graphics.y = self.y;
-
 	};
 	self.update = function(){
 		if(!self.frozen) self.updatePosition();
