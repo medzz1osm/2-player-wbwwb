@@ -9,7 +9,7 @@ Game.addToManifest({
 
 	cam_frame: "sprites/cam/cam.png",
 	cam_flash: "sprites/cam/cam-flash.png",
-	cam_instructions: "c/Users/60zekmed/Documents/GitHub/wbwwb-master/sprites/cam/cam-instructions.png",
+	cam_instructions: "sprites/cam/cam-instructions.png",
 
 	cam_snap: "sounds/cam_snap.mp3"
 
@@ -25,7 +25,7 @@ function Camera(scene, options){
 
 	// Properties
 	self.scene = scene;
-    self.x = Game.width/4.5;
+    self.x = Game.width/4.3;
     self.y = Game.height/2;
 	self.width = Camera.WIDTH;
 	self.height = Camera.HEIGHT;
