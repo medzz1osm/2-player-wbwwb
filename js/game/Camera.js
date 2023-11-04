@@ -9,7 +9,7 @@ Game.addToManifest({
 
 	cam_frame: "sprites/cam/cam.png",
 	cam_flash: "sprites/cam/cam-flash.png",
-	cam_instructions: "Screenshot_2023-11-03_at_19.02.44-removebg-preview.png",
+	cam_instructions: "c/Users/60zekmed/Documents/GitHub/wbwwb-master/sprites/cam/cam-instructions.png",
 
 	cam_snap: "sounds/cam_snap.mp3"
 
