@@ -6,9 +6,7 @@ The original
 ---
 
 **Brukertest**
-v1 = verson 1 uten lagdt til endringer 
-v2 = lagdt til noen av endringene 
-v3 = lagdt til alle endringer 
+
 
 - Hva tror du de to boksene gjør?
 - Klarer du å finne ut hvordan du bruker dem?
