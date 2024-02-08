@@ -32,18 +32,18 @@ v2 = lagdt til noen av endringene fra tilbakemelingene fra v1
 v3 = lagdt til alle endringene vi fikk til fra v2**
 
 v1
-Tilbakemelding 1 suzane
+Tilbakemelding 1 
 Legge til instruksjoner kan være på starten for å forklare hvordan man tar bildene og målet med spillet
 
 v1
-Tilbakemelding 2 oscar
+Tilbakemelding 2 
 Instruksjoner på kontroller
 Språk som brukeren kan
 Fikse bug, ta bilder når den andre tar bilder
 Starten kunne vært noe raskere 
 
 v2
-Tilbakemelding 3 max og odin
+Tilbakemelding 3 
 1. Shit
 2. Gjør det mindre shit
 3. Fix bug where camera gets stuck
@@ -52,7 +52,7 @@ Tilbakemelding 3 max og odin
 6. Controls
 
 v2
-Tilbakemelding 4 jørgen
+Tilbakemelding 4 
 1. Bra
 2. Mer action gjennom spillet
 3. bra
@@ -61,7 +61,7 @@ Tilbakemelding 4 jørgen
 6. nei
 
 v3
-Tilbakemelding 5 emily 
+Tilbakemelding 5 
 1. Bra konsept, morsomt gøy dynamikk med to spillere
 2. Nei
 3. Works
